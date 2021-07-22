@@ -1,9 +1,9 @@
 # Composition
-  # Frontend
-  Vue.js
+## Frontend
+Vue.js
   
-  # Backend
-  FastApi
+## Backend
+FastApi
 
-  # Api
-  RESTful and GraqhQL
+## Api
+RESTful and GraqhQL
