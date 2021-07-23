@@ -2,10 +2,11 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes import router as api_router
-from app.core import config, tasks
+from app.core import tasks
+
 
 def get_application():
-    app = FastAPI(title="hogehoge Reservation", version="1.0.0")
+    app = FastAPI(title="Customer Reservation", version="1.0.0")
 
     app.add_middleware(
         CORSMiddleware,
