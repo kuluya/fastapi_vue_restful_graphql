@@ -9,6 +9,7 @@ databases = "*"
 sqlalchemy = "*"
 alembic = "*"
 psycopg2 = "*"
+pydantic = "*"
 
 [dev-packages]
 

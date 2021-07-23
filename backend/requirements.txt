@@ -1,2 +1,8 @@
 fastapi
 uvicorn
+pydantic
+
+databases[postgresql]==0.4.3
+SQLAlchemy
+alembic
+psycopg2== 2.9.1
