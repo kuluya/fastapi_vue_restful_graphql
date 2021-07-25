@@ -25,7 +25,7 @@ def create_customer_table() -> None:
         sa.Column('last_name', sa.Text, nullable=False),
         sa.Column('email', sa.Text, nullable=False),
         sa.Column('created', sa.TIMESTAMP, server_default=sa.func.now()),
-        sa.Column('modified', sa.TIMESTAMP, server_default=sa.func.now(), server_onupdate=sa.func.current_timestamp())
+        sa.Column('modified', sa.TIMESTAMP, server_default=sa.func.now(), server_onupdate=sa.func.utc_timestamp())
     )
 
 

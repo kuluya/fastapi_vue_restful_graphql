@@ -19,14 +19,16 @@ class CustomerCreate(CustomerBase):
 
 
 class CustomerUpdate(CustomerBase):
-    email: str
-
-
-class CustomerInDB(IDModelMixin, CustomerCreate):
     first_name: str
     last_name: str
     email: str
 
 
-class CustomerPublic(IDModelMixin, CustomerCreate):
+class CustomerInDB(IDModelMixin, CustomerBase):
+    first_name: str
+    last_name: str
+    email: str
+
+
+class CustomerPublic(IDModelMixin, CustomerBase):
     pass
